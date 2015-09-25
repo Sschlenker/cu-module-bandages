@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-var name = 'cu-boilerplate-module';
+var name = 'cu-module-bandage';
 
 module.exports = {
   type: 'module',

@@ -1,12 +1,13 @@
 {
-  "name": "cu-boilerplate-module",
+  "name": "cu-module-bandage",
   "version": "0.1.0",
-  "description": "Camelot Unchained UI - Boilerplate Module",
+  "description": "Camelot Unchained UI - Bandage Module",
   "license": "MPL-2.0",
   "main": "src/ts/main.tsx",
   "contributors": [
     "saddieeiddas <saddie.eiddas@gmail.com>",
-    "jcdickinson <jonathan@dickinsons.co.za>"
+    "jcdickinson <jonathan@dickinsons.co.za>",
+    "sschlenker <cloudsift@gmail.com>"
   ],
   "keywords": [
     "Camelot",
@@ -22,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/csegames/cu-boilerplate-module.git"
+    "url": "https://github.com/Sschlenker/cu-module-bandages"
   },
   "dependencies": {
     "cu-core": "^0.1.3",

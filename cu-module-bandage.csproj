@@ -29,7 +29,7 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="src\cu-boilerplate-module.ui"/>
+    <Content Include="src\cu-module-bandage.ui"/>
     <Content Include="src\index.html"/>
     <Content Include="src\sass\main.scss"/>
     <TypeScriptCompile Include="src\ts\main.tsx"/>

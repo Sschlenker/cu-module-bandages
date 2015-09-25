@@ -1,6 +1,6 @@
 {
-  "name": "cu-boilerplate-module",
-  "mainFile": "cu-boilerplate-module/index.html",
+  "name": "cu-module-bandage",
+  "mainFile": "cu-module-bandage/index.html",
   "rect": {
     "left": 520,
     "top": 350,
