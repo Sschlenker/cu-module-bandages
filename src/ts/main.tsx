@@ -12,7 +12,35 @@ import * as cu from 'cu-core';
 console.log('cu-module');
 
 const Bandage = React.createClass({
-  
+   /* Constants */
+   const BANDAGE_ABILITY_ID = (31).toString(16);
+
+  /* jQuery Elements */
+
+    const $bandage = $('#bandage');
+
+    /* Functions */
+    cu.OnInitialized(() => {
+      cu.RequestAbility(BANDAGE_ABILITY_ID, ability => {
+        ability.icon = '../images/skills/bandage.png';
+
+        const button = ability.MakeButton(0);
+
+        $bandage.empty().append(button.rootElement);
+
+        // this is wrong and needs cleaned up
+        const tooltip = {
+          elements: button.rootElement,
+          options: {
+            title: ability.name,
+            content: ability.tooltip,
+            leftOffset: 0,
+            topOffset: -30
+          }
+        };
+        }, true);
+  });
+
 });
 
 
