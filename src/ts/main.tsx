@@ -13,13 +13,11 @@ console.log('cu-module');
 
 const Bandage = React.createClass({
    /* Constants */
-   const BANDAGE_ABILITY_ID = (31).toString(16);
-
-  /* jQuery Elements */
-
-    const $bandage = $('#bandage');
+   BANDAGE_ABILITY_ID:  (31).toString(16),
+   $bandage:  $('#bandage'),
 
     /* Functions */
+    //Thinking this needs to be rewritten as part of getInitialState?
     cu.OnInitialized(() => {
       cu.RequestAbility(BANDAGE_ABILITY_ID, ability => {
         ability.icon = '../images/skills/bandage.png';
@@ -28,7 +26,6 @@ const Bandage = React.createClass({
 
         $bandage.empty().append(button.rootElement);
 
-        // this is wrong and needs cleaned up
         const tooltip = {
           elements: button.rootElement,
           options: {
@@ -39,10 +36,13 @@ const Bandage = React.createClass({
           }
         };
         }, true);
-  });
+  }),
+//TODO: Need to fill out the Render function
+  render: function() {
+    return ();
+  }
 
 });
-
 
 module Bandage {
     /* Constants */
